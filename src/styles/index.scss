@@ -1,0 +1,44 @@
+@import "fonts";
+@import "colors";
+@import "mixins";
+@import "app";
+
+:root {
+  --color-1: #{$rich-black};
+  --color-2: #{$baby-powder};
+  --color-3: #{$tiffany-blue};
+  --color-4: #{$rose-mandder};
+  --color-5: #{$orange-peel};
+  --font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --text-color: --color-1;
+  --background-color: --color-2;
+  --base-font-size: 16px;
+  --base-font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  font-weight: var(--base-font-weight);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+input, button, select, textarea {
+  font-family: var(--font-family);
+}
+
+a, button {
+  cursor: pointer;
+  color: var(--color-4);
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
