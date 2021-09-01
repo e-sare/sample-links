@@ -4,13 +4,13 @@ const siteContent = {
       title: 'Google Assistant Developer Pages',
       about: 'Google Assistant Developer pages refresh initiative.',
       href: 'https://developers.google.com/assistant',
-      imgSrc: './sample-links/images/g_assistant.png',
+      imgSrc: '/sample-links/images/g_assistant.png',
     },
     {
       title: 'Google\'s Coding Competitions',
       about: 'Google Coding Competition front-end redesign.',
       href: 'https://codingcompetitions.withgoogle.com/',
-      imgSrc: './sample-links/images/g_competition.png',
+      imgSrc: '/sample-links/images/g_competition.png',
     },
     {
       title: 'Verizon Express',
