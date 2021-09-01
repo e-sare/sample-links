@@ -15,7 +15,7 @@ function App() {
               className="content-section"
               key={idx}>
                 <div className="content-section__img-content content-section__item">
-                  <img className="content-section__img" src={c.imgSrc}/>
+                  <img className="content-section__img" src={c.imgSrc} alt={c.title}/>
                 </div>
                 <div className="content-section__description-content content-section__item">
                   <h2>{c.title}</h2>

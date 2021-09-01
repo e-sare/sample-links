@@ -28,9 +28,14 @@
 .content-section {
   display: flex;
   margin-bottom: 3rem;
+  flex-direction: column;
 
-  &:nth-child(even) {
-    flex-direction: row-reverse;
+  @include tablet {
+    flex-direction: row;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__item {
