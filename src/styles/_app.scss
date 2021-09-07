@@ -29,6 +29,9 @@
   display: flex;
   margin-bottom: 3rem;
   flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s linear;
 
   @include tablet {
     flex-direction: row;
@@ -36,6 +39,11 @@
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
+  }
+
+  &.is-visible {
+    visibility: visible;
+    opacity: 1;
   }
 
   &__item {

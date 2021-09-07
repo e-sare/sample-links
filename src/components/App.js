@@ -1,7 +1,27 @@
+import { useEffect } from 'react';
 import siteContent from '../contents/';
 
 function App() {
   const now = new Date();
+
+  useEffect(() => {
+    const sectionOptions = {
+      rootMargin: '0px 0px -20% 0px',
+    };
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, sectionOptions);
+
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(s => {
+      sectionObserver.observe(s);
+    });
+  }, []);
 
   return (
     <div className="app">
